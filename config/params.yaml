@@ -1,0 +1,58 @@
+# Raw topics
+imgTopicRaw: "/image"
+laserCloudTopicRaw: "/cloud"
+
+# Synced topics
+imgTopicSync: "/image_sync"
+laserCloudTopicSync: "/cloud_sync"
+
+# Point cloud filter params
+maxRange: 6
+minZ: -0.7
+maxZ: 1.0
+
+# Plane segmentation params
+maxDist: 0.025
+minInliers: 800
+squareRange: 0.8
+
+# Line detection params
+eplisonZ: 0.1
+maxDistLine: 0.05
+numFrag: 50
+numInliersLine: 5
+
+# Angle filtering...
+angleGap: 0.0
+
+# Camera intrinsic params (distortion recified version)
+
+cameraNum: 1
+
+# Extrinsic params
+
+# Extrinsic (LiDAR -> Cam0)
+#extrinsicTransLC0: [0.00282025 ,  0.219479 ,-0.0146728]
+#extrinsicRotLC0:   [-0.00769969 ,  -0.999968 ,-0.00218131, -0.0146897 , 0.00229425  , -0.999889, 0.999862,  -0.0076668  ,-0.0147069]
+
+#extrinsicTransLC0: [-0.000741898, 0.220527, -0.0214306]
+#extrinsicRotLC0:   [-0.00484637, -0.999931, -0.0106588, -0.0137758, 0.0107246 ,-0.999848, 0.999893, -0.00469879, -0.0138268]
+
+
+# Extrinsic (LiDAR -> Cam1)
+extrinsicTransLC0: [-0.0404242,   0.221141, -0.0537689]
+extrinsicRotLC0:   [-0.946926,   -0.321436, -0.00310207, 0.00531843 ,-0.00601736 ,  -0.999968, 0.321406 ,  -0.946912 , 0.00740753]
+
+# Extrinsic (LiDAR -> Cam2)
+# extrinsicTransLC0: [-0.026155, 0.22989, 0.177984]
+# extrinsicRotLC0:   [-0.579701, 0.814827, -0.00203449, 0.0154212, 0.00847485, -0.999845, -0.814683, -0.579643, -0.0174785]
+
+# Extrinsic (LiDAR -> Cam3)
+# extrinsicTransLC0: [0.00537114 ,  0.226592 ,-0.0486324]
+# extrinsicRotLC0:   [0.582047,   0.813074,  0.0114572, 0.00404337,  0.0111958,  -0.999929, -0.813145 ,  0.582052,  0.0032289]
+
+# Extrinsic (LiDAR -> Cam4)
+# extrinsicTransLC0: [0.00298191,   0.191047, -0.0125213]
+# extrinsicRotLC0:   [0.954458,  -0.298286, 0.00591748, 0.00688392, 0.00218947,  -0.999974, 0.298265,   0.954474 ,0.00414313]
+
+

@@ -1,0 +1,17 @@
+<launch>
+
+    <arg name="project" default="lidar_cam_calib"/>
+    <!-- Parameters -->
+    <rosparam file="$(find lidar_cam_calib)/config/params_velodyne.yaml" command="load" />
+
+    <!-- Syncronized subscriber node -->
+    <node pkg="$(arg project)" type="lidarCameraCalibMono"   name="lidarCameraCalibMono"    output="screen"/>
+
+    <!--- Calib node -->
+    <node pkg="$(arg project)" type="syncPublisherMono"   name="syncPublisherMono"    output="screen"/>
+    
+
+    <!--- Run Rviz-->
+    <!--include file="$(find lio_sam)/launch/include/module_rviz.launch" /-->
+
+</launch>

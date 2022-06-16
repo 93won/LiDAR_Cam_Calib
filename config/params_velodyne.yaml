@@ -1,0 +1,32 @@
+# Raw topics
+imgTopicRaw: "/camera/color/image_raw"
+laserCloudTopicRaw: "/velodyne_points"
+
+# Synced topics
+imgTopicSync: "/image_sync"
+laserCloudTopicSync: "/cloud_sync"
+
+# Point cloud filter params
+maxRange: 1000
+minZ: -1000.0
+maxZ: 1000.0
+
+# Plane segmentation params
+maxDist: 0.025
+minInliers: 20
+squareRange: 0.8
+
+# Line detection params
+eplisonZ: 0.05
+maxDistLine: 0.05
+numFrag: 100
+numInliersLine: 3
+
+# Angle filtering...
+angleGap: 20.0
+
+# Extrinsic (LiDAR -> Cam)
+extrinsicTransLC0: [0.000280155 ,  -0.090129  ,  0.426441]
+extrinsicRotLC0:   [ 0.0320739 ,  -0.999475, -0.00466918, 0.0405431 , 0.00596877  ,  -0.99916, 0.998663 ,  0.0318577 ,  0.0407132 ]
+
+

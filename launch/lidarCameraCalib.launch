@@ -1,0 +1,17 @@
+<launch>
+
+    <arg name="project" default="lidar_cam_calib"/>
+    <!-- Parameters -->
+    <rosparam file="$(find lidar_cam_calib)/config/params.yaml" command="load" />
+
+    <!-- Syncronized subscriber node -->
+    <node pkg="$(arg project)" type="lidarCameraCalib"   name="lidarCameraCalib"    output="screen"/>
+
+    <!--- Calib node -->
+    <node pkg="$(arg project)" type="syncPublisher"   name="syncPublisher"    output="screen"/>
+    
+
+    <!--- Run Rviz-->
+    <!--include file="$(find lio_sam)/launch/include/module_rviz.launch" /-->
+
+</launch>
